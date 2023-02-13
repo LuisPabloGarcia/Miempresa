@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <meta name="author" content="Luis Pablo">
+    <meta name="description" content="Esta pagina web tratara d nuestra empresa">
+    <meta name="Keywords" content="Bar, Bares, Ocio, Socio">
+    <title>Mi empresa</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color:rgb(50, 100, 25);/*Esto nos permitira cambiar la alineación,tamaño,estilo y color del texto al igual qu9e en h2 y h3*/
+        }
+        h2{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color:orangered;
+        }
+        h3{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+            color:red;
+        }
+        nav{
+            display: inline;
+        }
+        h1 {
+  width: 1000px;
+  height: 100px;
+  background-color: yellow;
+  animation-name: example;
+  animation-duration: 10s;
+}
+
+@keyframes example {
+  from {background-color: orangered;}
+  to {background-color: yellow;}
+}
+#grad1 {
+  height: auto;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(green, blue);}
+  hr{color: black;}
+  p{color:yellow}
+  label{color:sandybrown}
+  ul, li{color:red}
+  nav{color: white;}
+    </style>
+    <script src="https://kit.fontawesome.com/3ac747cd5d.js" crossorigin="anonymous"></script>
+</head>
+<body id="grad1">
+    <h1>Centro de mayores de los barros</h1>
+    <nav>
+        <div>Servicio que ofrece</div><hr>
+        <div>Historia</div> <hr>
+        <div>Formulario de contacto</div><hr>
+    </nav>
+    <img src="./img/hbdhbwchb.PNG" alt="fuente de los barros o centro de mayores de los barros" title="Centro de mayores de los barros" loading="lazy"><!--Esta es una foto del bar del que vamos a hablar-->
+    <h2 >Servicios que ofrece</h2><!--Hablaremos sobre actividades,personal,y servicios que ofrece dicho bar cada uno con su respectiva sala y horarios-->
+    <p>Los servicios que este bar ofrece son:</p>
+    <ol>
+        <li>Carne de socio.</li>
+        <li>Baile los sabados por la tarde para los socios.</li>
+        <li>Peluqueria,pedicura,etc.</li>
+        <li>Un servicio excelente y con camarer@s amables.</li>
+    </ol>
+    <p>Dentro de los bailes hay una actuacion en vivo de musicos,los musicos que van a tocar alli tocan musica de la epoca de los socios,los grupos que van a tocar son:</p>
+        <ul>
+            <li>The boleritos.</li>
+            <li>A contra punto.</li>
+        </ul>
+    <p>Los horarios de apertura del dicho bar son de 10:00am hasta las 14:30pm en horario de mañana, y en horario de la tarde de las 17:00pm hasta las 22:30pm,los bailes de los sabados son de 20:00pm hasta la 12am en horarios de invierno.En verano el horario es de 21:00pm hasta la 01:00am.</p>
+    <h2>Historia</h2><br>
+    <p>Este centro fue fundado en en 1997 dinde se decidio que seria un bar para jubilados donde por una cantidad de dinero al año conseguirian un carné de socio,dentro de lo que seria el bar existia una catefçgoria que era a siectiva que ponia dentro del bar en marcha actividades tipo:</p>
+        <ul>
+            <li>comidas</li>
+            <li>Bailes</li>
+            <li>Bolillo</li>
+            <li>costura</li>
+            <li>bingo</li>
+            <li>viajes</li>
+        </ul>
+    <p>A lo largo de los años el bar ha tenido distintos dueños,actualmente el bar concierne de ma de 200 socios activos de distintas poblaciones,contando ya con:</p>
+    <ul>
+        <li>Don Benito</li>
+        <li>Villanueva</li>
+        <li>Miajadas</li>
+        <li>Guareña</li>
+    </ul>
+    <p>estas son algunas de las poblaciones de donde vienen las personas a disfrutar de un rato de ocio y diversion,este bar cuenta con la directiva encargada de llevar a cabo dichas activdades cin ayuda del dueño del bar,en este caso el camarero y sus trabajadores </p>
+    <h2>Localización</h2>
+    <p>La localización de este bar se encuentra en la calle higuera haciendo esquina con la calle naranjo</p>
+    <button ><a href="https://www.google.com/maps/place/C.+Higuera,+06400+Don+Benito,+Badajoz/@38.9508096,-5.8568859,19.5z/data=!4m5!3m4!1s0xd145b09f71a026b:0x20d37cbd1d49f134!8m2!3d38.9506902!4d-5.8569606" target="blank">Clickame para llevarte a la ubicacion</a></button><br>
+    <p>a continuacion dejamos un numero de contacto para, que en el caso de que quieran obtener más inmformación puedan obtenerla,el numer saldra al clickar en el botón </p><!--Esto es una aclaración por si acaso no encuentran el numero de telefono-->
+    <button onclick="info()">Clickame para mas información</button>
+    <script>
+        function info() {
+            alert("Para más información llame al 924 09 53 16")
+        }
+    </script>
+    <h2>Formulario de contacto</h2>
+    <form>
+        <label for="fname">Nombre:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Apellidos:</label>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="number">Numero de Telefono:</label>
+        <input type="number" id="number" name="number"><br>
+        <label for="email">Gmail</label>
+        <input type="email" id="email" name="email"><br>
+        <h3>Actividades a las que apuntarse</h3>
+        <label>Antes de apuntarse se tiene que saber que todas estas actividades son gratuitas</label><br>
+        <input type="checkbox" id="actividades1" name="actividades1">
+        <label for="actividades1">Bingo</label><br>
+        <input type="checkbox" id="actividades2" name="actividades2">
+        <label for="actividades2">Bolillo</label><br>
+        <input type="checkbox" id="actividades3" name="actividades3">
+        <label for="actividades3">Manualidades</label><br>
+        <input type="checkbox" id="actividades4" name="actividades4">
+        <label for="actividades4">Comidas (los dias que halla)</label><br>
+        <input type="checkbox" id="actividades5" name="actividades5">
+        <label for="actividades5">Baile (Sabados)</label><br>
+        <label for="recomendación">Escriba alguna cosa que quieras saber y no haya quedado clara para solucionar su duda</label>
+        <input type="text" id="recomendación" name="recomendacion"><br>
+        <label for="submit"></label>
+        <input type="submit" id="submit">
+    </form>
+    <footer>
+        <i class="fa-solid fa-phone">924 09 53 16</i><br>
+        <i class="fa-brands fa-youtube"><a href="https://www.youtube.com/@nuestracomarca">Nuestracomarca que tiene videos de este cenro de mayores te puede dar información</a></i><br>
+    </footer>
+</body>
+</html>
